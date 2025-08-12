@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/logo.png" />
+    <!-- Google Fonts - Digital Coding Style -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Engelbert Ilac - Portfolio</title>
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-progress"></div>
+    </div>
+    
+    <!-- Electrical Circuit Background Canvas -->
+    <canvas id="circuitCanvas" class="circuit-background"></canvas>
+    
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+        <a href="/">Engelbert</a>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <span class="nav-divider">|</span>
+        <a href="#about">About</a>
+        <span class="nav-divider">|</span>
+        <a href="#skill">Skills</a>
+        <span class="nav-divider">|</span>
+        <a href="#certificates">Certificates</a>
+        <span class="nav-divider">|</span>
+        <a href="#project">Projects</a>
+        <span class="nav-divider">|</span>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+      </div>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skill">Skills</a></li>
+          <li><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li><a class="nav-link" href="#project">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+      <section id="home" class="hero reveal">
+        <div class="container">
+          <div class="content">
+            <svg viewBox="0 0 1500 500" data-aos="fade-down">
+              <text x="50%" y="50%" text-anchor="middle" class="animated-text">ENGELBERT ILAC</text>
+            </svg>
+            <h1 data-aos="zoom-in-up">
+              Web & Mobile App Developer | <span>AI & Python Specialist</span>
+            </h1>
+            <p data-aos="zoom-in-up" data-aos-delay="200" class="hero-subtitle">
+              Specializing in Artificial Intelligence, Machine Learning, and Full-Stack Development
+            </p>
+            <div class="button-container" data-aos="zoom-out" data-aos-delay="300">
+              <div class="button-effects">
+                <a href="#project" class="btn-primary">
+                  <span>View My Work</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about reveal">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              About Me
+            </h1>
+            <div class="about-me">
+              <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+                <div class="image-box">
+                  <img src="assets/image/profile.jpg" alt="profile" />
+                </div>
+              </div>
+
+              <div
+                data-aos="zoom-in-left"
+                data-aos-delay="300"
+                class="description"
+              >
+                <div class="name-role">
+                  <h1>Engelbert R. Ilac</h1>
+                  <h2>Web & Mobile Developer | AI Specialist</h2>
+                </div>
+                <p>
+                  I'm a passionate developer with a BSIT degree from St. Paul University Philippines, specializing in Artificial Intelligence and full-stack development. I love creating innovative solutions that make a difference.
+                </p>
+                <p>
+                  With expertise in modern web technologies, AI programming, and mobile development, I'm committed to continuous learning and delivering high-quality software solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skill" class="skill reveal">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              Technical Skills
+            </h1>
+
+            <div class="skills" data-aos-delay="500" style="display: flex; flex-wrap: wrap; gap: 20px;">
+              <!-- First Row - 5 skills -->
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/html5.svg" alt="html" />
+                <span>HTML5</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/css3.svg" alt="css" />
+                <span>CSS3</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/javascript.svg" alt="javascript" />
+                <span>JavaScript</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/react.svg" alt="react" />
+                <span>React.js</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/tailwind.svg" alt="tailwind" />
+                <span>Tailwind CSS</span>
+              </div>
+              
+              <!-- Second Row - 5 skills -->
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/figma.svg" alt="figma" />
+                <span>Figma</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/mysql.svg" alt="mysql" />
+                <span>MySQL</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/postgresql.svg" alt="postgresql" />
+                <span>PostgreSQL</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/github.svg" alt="github" />
+                <span>GitHub</span>
+              </div>
+              <div data-aos="zoom-in-down" class="skill-box" style="flex: 0 0 calc(20% - 16px);">
+                <img src="assets/icon/alpinejs.svg" alt="alpinejs" />
+                <span>Alpine.js</span>
+              </div>
+            </div>
+
+            <div class="skills-categories" data-aos-delay="600">
+              <div class="category">
+                <h3>🖥️ Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Next.js, Tailwind CSS, Responsive Design, UI/UX Principles</p>
+              </div>
+              <div class="category">
+                <h3>⚙️ Backend & Database</h3>
+                <p>Node.js, PHP (Laravel), Python, RESTful APIs, MySQL, PostgreSQL, Database Design & Management</p>
+              </div>
+              <div class="category">
+                <h3>🤖 Artificial Intelligence</h3>
+                <p>Python AI Programming, Machine Learning Basics, Natural Language Processing (NLP), Data Analysis, TensorFlow/PyTorch</p>
+              </div>
+              <div class="category">
+                <h3>🛠️ Development Tools</h3>
+                <p>Git & GitHub, VS Code, Postman, Figma, Adobe Creative Suite, Docker Basics, Agile Methodologies</p>
+              </div>
+              <div class="category">
+                <h3>🌐 Core IT Knowledge</h3>
+                <p>Computer Networks, Cybersecurity Fundamentals, System Administration, Technical Support, Cloud Computing Basics</p>
+              </div>
+              <div class="category">
+                <h3>📱 Additional Skills</h3>
+                <p>Mobile App Development, Content Creation, Photo & Video Editing, Project Management, Problem Solving</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="certificates reveal">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              Certificates & Awards
+            </h1>
+
+            <div class="certificates-grid" data-aos-delay="500">
+              <div data-aos="zoom-in-down" data-aos-delay="300" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/certiport-logo.png" alt="Certiport Logo" />
+                  </div>
+                  <div class="certificate-badge">🏆</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Pearson IT Specialist – Artificial Intelligence 2024</h3>
+                  <p>Certiport Pearson IT Specialist Certification in Artificial Intelligence, demonstrating expertise in AI fundamentals and applications.</p>
+                  <span class="certificate-type">Professional Certification</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="400" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/dost-logo.png" alt="DOST Logo" />
+                  </div>
+                  <div class="certificate-badge">🎖️</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>DOST Region 2 Certificate of Appreciation</h3>
+                  <p>Technical Support recognition for outstanding contribution to iSCENE 2025 event organization and execution.</p>
+                  <span class="certificate-type">Recognition Award</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="450" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/civil-service-logo.png" alt="Civil Service Commission Logo" />
+                  </div>
+                  <div class="certificate-badge">🏛️</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Civil Service Honor Eligibility</h3>
+                  <p>Professional civil service eligibility granted by the Civil Service Commission, qualifying for government positions and career advancement opportunities.</p>
+                  <span class="certificate-type">Professional Eligibility</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="500" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">🥇</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Best Capstone Project Award</h3>
+                  <p>Recognition for outstanding achievement in developing the Solar-Powered Lawn Mower Robot project, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Academic Excellence</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="550" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">⭐</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Outstanding Performance, On-the-Job Training (OJT)</h3>
+                  <p>Recognition for exceptional performance and dedication during internship and practical training, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Training Excellence</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="600" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">🥇</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Gold Awardee, Networking Fundamentals</h3>
+                  <p>Highest achievement in networking fundamentals, demonstrating advanced knowledge in computer networks and protocols, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Technical Achievement</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="650" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">🥈</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Silver Awardee, Cybersecurity Fundamentals</h3>
+                  <p>Recognition for strong understanding of cybersecurity principles, threat detection, and security best practices, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Technical Achievement</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="700" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">🥈</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Silver Awardee, Web & Mobile App Development</h3>
+                  <p>Recognition for proficiency in modern web technologies and mobile application development frameworks, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Technical Achievement</span>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="750" class="certificate-card">
+                <div class="certificate-header">
+                  <div class="institution-logo">
+                    <img src="assets/spup-logo.png" alt="St. Paul University Philippines Logo" />
+                  </div>
+                  <div class="certificate-badge">🥈</div>
+                </div>
+                <div class="certificate-content">
+                  <h3>Silver Awardee, Database Management</h3>
+                  <p>Recognition for expertise in database design, management, and optimization techniques, awarded by St. Paul University Philippines.</p>
+                  <span class="certificate-type">Technical Achievement</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="project reveal">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              Projects
+            </h1>
+
+            <div class="projects">
+              <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+                <img src="assets/image/DOST.png" alt="SETUP 4.0 System" />
+                <div class="description">
+                  <h1>SETUP 4.0 Web-Based Monitoring System</h1>
+                  <p>
+                    Developed for DOST Region II under the Small Enterprise Technology Upgrading Program. A comprehensive web application for monitoring project progress, generating detailed reports, and streamlining data management processes.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">REST API</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+                <img src="assets/image/solar-robot.jpg" alt="Solar Lawn Mower Robot" />
+                <div class="description">
+                  <h1>Solar-Powered Lawn Mower Robot</h1>
+                  <p>
+                    Capstone project: Designed and developed an eco-friendly, AI-powered autonomous lawn mower robot. Features solar energy harvesting, computer vision for obstacle detection, and intelligent path planning algorithms.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">AI/ML</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+                <img src="assets/image/kiosk.png" alt="SPUP Information Kiosk" />
+                <div class="description">
+                  <h1>SPUP Interactive Information Kiosk</h1>
+                  <p>
+                    Created an intelligent, AI-powered information kiosk for St. Paul University Philippines. Features natural language processing for automated responses, touch-screen interface, and comprehensive university information system.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Touch UI</span>
+                    <span class="tech-tag">AI Chatbot</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="600" class="card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="E-Commerce Platform" />
+                <div class="description">
+                  <h1>Modern E-Commerce Platform</h1>
+                  <p>
+                    Developed a full-featured e-commerce solution with advanced features including real-time inventory management, secure payment processing, AI-powered product recommendations, and comprehensive analytics dashboard.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe API</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="700" class="card">
+                <img src="assets/image/chatbot.png" alt="AI powered chatbot application" />
+                <div class="description">
+                  <h1>AI powered chatbot application</h1>
+                  <p>
+                    Developed an intelligent customer service chatbot for a local business. Features include automated responses to common inquiries, ticket routing, FAQ handling, and seamless integration with existing customer support systems.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLTK</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-down" data-aos-delay="800" class="card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Analytics Dashboard" />
+                <div class="description">
+                  <h1>Real-Time Data Analytics Dashboard</h1>
+                  <p>
+                    Created a comprehensive data visualization platform for business intelligence. Features include interactive charts, real-time data streaming, automated reporting, and predictive analytics using machine learning algorithms.
+                  </p>
+                  <div class="tech-stack">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">TensorFlow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact reveal">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              Contact Information
+            </h1>
+
+            <div class="contact-info" data-aos="zoom-in-down" data-aos-delay="300">
+              <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>Engelbertilac123a@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <h3>📱 Phone</h3>
+                <p>09063539203</p>
+              </div>
+              <div class="contact-item">
+                <h3>📍 Location</h3>
+                <p>Centro, Amulung Cagayan</p>
+              </div>
+              <div class="contact-item">
+                <h3>🎓 Education</h3>
+                <p>BSIT Graduate - St. Paul University Philippines</p>
+              </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links" data-aos="zoom-in-down" data-aos-delay="400">
+              <h3>🌐 Connect With Me</h3>
+              <div class="social-links-container">
+                <a href="https://github.com/bert-dev13" target="_blank" rel="noopener noreferrer" class="social-link github">
+                  <div class="icon-wrapper">
+                    <img src="assets/icon/github.svg" alt="GitHub Logo" class="social-logo">
+                  </div>
+                  <span>GitHub</span>
+           
+                </a>
+                <a href="https://www.linkedin.com/in/engelbert-ilac-061b66374/" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                  <div class="icon-wrapper">
+                    <img src="assets/icon/linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+                  </div>
+                  <span>LinkedIn</span>
+                
+                </a>
+                <a href="https://www.facebook.com/bert.ilac.52/" target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                  <div class="icon-wrapper">
+                    <img src="assets/icon/facebook.svg" alt="Facebook Logo" class="social-logo">
+                  </div>
+                  <span>Facebook</span>
+           
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reveal">
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="assets/logo.png" alt="logo" />
+            <a href="">Engelbert Ilac</a>
+          </div>
+
+          <!-- Short About -->
+          <p>
+            BSIT Graduate specializing in Artificial Intelligence. Passionate about AI, machine learning, and creating innovative solutions through technology.
+          </p>
+
+          <!-- Social Media -->
+          <div class="social-media-container">
+            <div class="social-media">
+              <a href="https://github.com/bert-dev13" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <img src="assets/icon/github.svg" alt="GitHub Logo" class="social-logo">
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.linkedin.com/in/engelbert-ilac-061b66374/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <img src="assets/icon/linkedin.svg" alt="LinkedIn Logo" class="social-logo">
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.facebook.com/bert.ilac.52/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
+                <img src="assets/icon/facebook.svg" alt="Facebook Logo" class="social-logo">
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="mailto:Engelbertilac123a@gmail.com" aria-label="Email">
+                <box-icon color="#fff" name="mail" type="solid" size="md"></box-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="information">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Contact Info</h1>
+            <ul>
+              <li>📧 Engelbertilac123a@gmail.com</li>
+              <li>📱 09063539203</li>
+              <li>📍 Centro, Amulung Cagayan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
